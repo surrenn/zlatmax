@@ -1,0 +1,43 @@
+@import "libs/bootstrap-reboot.min";
+
+//google font
+// @import url("link");
+
+@import "font/font";
+
+@import "variables/_variables.scss";
+
+* {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 18px;
+  color: $main-color;
+}
+
+a {
+  color: $main-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-color;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
