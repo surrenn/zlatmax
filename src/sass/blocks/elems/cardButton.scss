@@ -1,0 +1,14 @@
+.card-btn {
+  display: block;
+  box-shadow: 0 4px 20px 0 rgba(232, 170, 49, 0.43);
+  background: #e8aa31;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 256%;
+    color: #fff;
+  }
+}

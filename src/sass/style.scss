@@ -1,17 +1,14 @@
 @import "libs/bootstrap-reboot.min";
 
-//google font
-// @import url("link");
-
-//local fonts
-// @import "font/font";
+//font
+@import "font/font";
 
 //variables
 @import "variables/_variables.scss";
 
 * {
   font-family: $main-font;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   color: $main-color;
 }
@@ -43,3 +40,7 @@ a {
   margin: 0 auto;
   box-sizing: content-box;
 }
+
+// import elems
+@import "blocks/elems/cardProduct.scss";
+@import "blocks/elems/cardButton.scss";
