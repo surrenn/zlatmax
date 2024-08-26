@@ -1,7 +1,7 @@
 .card {
   background-color: #fefefe;
-  width: 375px;
-  height: 600px;
+  // width: 375px;
+  // height: 600px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   &__img {
     background-color: #fefefe;
@@ -53,17 +53,17 @@
   }
 
   &__reviews {
+    display: block;
     font-weight: 500;
   }
 
   &__divider {
-    margin-top: 20px;
+    margin: 20px 0;
     height: 1px;
     border: 1px solid rgba(20, 20, 20, 0.5);
   }
 
   &__bottom {
-    margin-top: 20px;
     display: flex;
     align-items: center;
 
@@ -118,4 +118,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 425px) {
+  .card {
+    // width: 290px;
+    // height: 537px;
+
+    &__img {
+      height: 229px;
+    }
+
+    &__body {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__rating {
+      display: block;
+      margin-top: 10px;
+
+      & > *:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__divider {
+      margin: 15px 0;
+    }
+  }
 }
